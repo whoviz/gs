@@ -1,0 +1,186 @@
+/**
+ * Base
+**/
+ 
+.gs {
+  /* # of columns (16, 20, 24...) */ 
+  @cols: 24;
+  /* maximum width */
+  @max: 960px;
+  /* increment */
+  @inc: @max / @cols;
+  /* gap width */
+  @gap: 20px;
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: @gap / 2;
+  margin-right: @gap / 2;
+}
+
+/**
+ * Container
+**/
+ 
+.gs-container {
+  margin: 0 auto;
+  width: .gs[@max];
+}
+
+/**
+ * Grid
+**/
+
+.gs-1 { .gs; width: .gs[@inc] - .gs[@gap]; }
+.gs-2 { .gs; width: .gs[@inc] * 2 - .gs[@gap]; }
+.gs-3 { .gs; width: .gs[@inc] * 3 - .gs[@gap]; }
+.gs-4 { .gs; width: .gs[@inc] * 4 - .gs[@gap]; }
+.gs-5 { .gs; width: .gs[@inc] * 5 - .gs[@gap]; }
+.gs-6 { .gs; width: .gs[@inc] * 6 - .gs[@gap]; }
+.gs-7 { .gs; width: .gs[@inc] * 7 - .gs[@gap]; }
+.gs-8 { .gs; width: .gs[@inc] * 8 - .gs[@gap]; }
+.gs-9 { .gs; width: .gs[@inc] * 9 - .gs[@gap]; }
+.gs-10 { .gs; width: .gs[@inc] * 10 - .gs[@gap]; }
+.gs-11 { .gs; width: .gs[@inc] * 11 - .gs[@gap]; }
+.gs-12 { .gs; width: .gs[@inc] * 12 - .gs[@gap]; }
+.gs-13 { .gs; width: .gs[@inc] * 13 - .gs[@gap]; }
+.gs-14 { .gs; width: .gs[@inc] * 14 - .gs[@gap]; }
+.gs-15 { .gs; width: .gs[@inc] * 15 - .gs[@gap]; }
+.gs-16 { .gs; width: .gs[@inc] * 16 - .gs[@gap]; }
+.gs-17 { .gs; width: .gs[@inc] * 17 - .gs[@gap]; }
+.gs-18 { .gs; width: .gs[@inc] * 18 - .gs[@gap]; }
+.gs-19 { .gs; width: .gs[@inc] * 19 - .gs[@gap]; }
+.gs-20 { .gs; width: .gs[@inc] * 20 - .gs[@gap]; }
+.gs-21 { .gs; width: .gs[@inc] * 21 - .gs[@gap]; }
+.gs-22 { .gs; width: .gs[@inc] * 22 - .gs[@gap]; }
+.gs-23 { .gs; width: .gs[@inc] * 23 - .gs[@gap]; }
+.gs-24 { .gs; width: .gs[@inc] * 24 - .gs[@gap]; }
+
+/**
+ * Prefix
+**/
+
+.gs-prefix-1 { padding-left: .gs[@inc]; }
+.gs-prefix-2 { padding-left: .gs[@inc] * 2; }
+.gs-prefix-3 { padding-left: .gs[@inc] * 3; }
+.gs-prefix-4 { padding-left: .gs[@inc] * 4; }
+.gs-prefix-5 { padding-left: .gs[@inc] * 5; }
+.gs-prefix-6 { padding-left: .gs[@inc] * 6; }
+.gs-prefix-7 { padding-left: .gs[@inc] * 7; }
+.gs-prefix-8 { padding-left: .gs[@inc] * 8; }
+.gs-prefix-9 { padding-left: .gs[@inc] * 9; }
+.gs-prefix-10 { padding-left: .gs[@inc] * 10; }
+.gs-prefix-11 { padding-left: .gs[@inc] * 11; }
+.gs-prefix-12 { padding-left: .gs[@inc] * 12; }
+.gs-prefix-13 { padding-left: .gs[@inc] * 13; }
+.gs-prefix-14 { padding-left: .gs[@inc] * 14; }
+.gs-prefix-15 { padding-left: .gs[@inc] * 15; }
+.gs-prefix-16 { padding-left: .gs[@inc] * 16; }
+.gs-prefix-17 { padding-left: .gs[@inc] * 17; }
+.gs-prefix-18 { padding-left: .gs[@inc] * 18; }
+.gs-prefix-19 { padding-left: .gs[@inc] * 19; }
+.gs-prefix-20 { padding-left: .gs[@inc] * 20; }
+.gs-prefix-21 { padding-left: .gs[@inc] * 21; }
+.gs-prefix-22 { padding-left: .gs[@inc] * 22; }
+.gs-prefix-23 { padding-left: .gs[@inc] * 23; }
+
+/**
+ * Suffix
+**/
+
+.gs-suffix-1 { padding-right: .gs[@inc]; }
+.gs-suffix-2 { padding-right: .gs[@inc] * 2; }
+.gs-suffix-3 { padding-right: .gs[@inc] * 3; }
+.gs-suffix-4 { padding-right: .gs[@inc] * 4; }
+.gs-suffix-5 { padding-right: .gs[@inc] * 5; }
+.gs-suffix-6 { padding-right: .gs[@inc] * 6; }
+.gs-suffix-7 { padding-right: .gs[@inc] * 7; }
+.gs-suffix-8 { padding-right: .gs[@inc] * 8; }
+.gs-suffix-9 { padding-right: .gs[@inc] * 9; }
+.gs-suffix-10 { padding-right: .gs[@inc] * 10; }
+.gs-suffix-11 { padding-right: .gs[@inc] * 11; }
+.gs-suffix-12 { padding-right: .gs[@inc] * 12; }
+.gs-suffix-13 { padding-right: .gs[@inc] * 13; }
+.gs-suffix-14 { padding-right: .gs[@inc] * 14; }
+.gs-suffix-15 { padding-right: .gs[@inc] * 15; }
+.gs-suffix-16 { padding-right: .gs[@inc] * 16; }
+.gs-suffix-17 { padding-right: .gs[@inc] * 17; }
+.gs-suffix-18 { padding-right: .gs[@inc] * 18; }
+.gs-suffix-19 { padding-right: .gs[@inc] * 19; }
+.gs-suffix-20 { padding-right: .gs[@inc] * 20; }
+.gs-suffix-21 { padding-right: .gs[@inc] * 21; }
+.gs-suffix-22 { padding-right: .gs[@inc] * 22; }
+.gs-suffix-23 { padding-right: .gs[@inc] * 23; }
+
+/**
+ * Push
+**/
+
+.gs-push-1 { left: .gs[@inc]; }
+.gs-push-2 { left: .gs[@inc] * 2; }
+.gs-push-3 { left: .gs[@inc] * 3; }
+.gs-push-4 { left: .gs[@inc] * 4; }
+.gs-push-5 { left: .gs[@inc] * 5; }
+.gs-push-6 { left: .gs[@inc] * 6; }
+.gs-push-7 { left: .gs[@inc] * 7; }
+.gs-push-8 { left: .gs[@inc] * 8; }
+.gs-push-9 { left: .gs[@inc] * 9; }
+.gs-push-10 { left: .gs[@inc] * 10; }
+.gs-push-11 { left: .gs[@inc] * 11; }
+.gs-push-12 { left: .gs[@inc] * 12; }
+.gs-push-13 { left: .gs[@inc] * 13; }
+.gs-push-14 { left: .gs[@inc] * 14; }
+.gs-push-15 { left: .gs[@inc] * 15; }
+.gs-push-16 { left: .gs[@inc] * 16; }
+.gs-push-17 { left: .gs[@inc] * 17; }
+.gs-push-18 { left: .gs[@inc] * 18; }
+.gs-push-19 { left: .gs[@inc] * 19; }
+.gs-push-20 { left: .gs[@inc] * 20; }
+.gs-push-21 { left: .gs[@inc] * 21; }
+.gs-push-22 { left: .gs[@inc] * 22; }
+.gs-push-23 { left: .gs[@inc] * 23; }
+
+/**
+ * Pull
+**/
+
+.gs-pull-1 { left: - .gs[@inc]; }
+.gs-pull-2 { left: - .gs[@inc] * 2; }
+.gs-pull-3 { left: - .gs[@inc] * 3; }
+.gs-pull-4 { left: - .gs[@inc] * 4; }
+.gs-pull-5 { left: - .gs[@inc] * 5; }
+.gs-pull-6 { left: - .gs[@inc] * 6; }
+.gs-pull-7 { left: - .gs[@inc] * 7; }
+.gs-pull-8 { left: - .gs[@inc] * 8; }
+.gs-pull-9 { left: - .gs[@inc] * 9; }
+.gs-pull-10 { left: - .gs[@inc] * 10; }
+.gs-pull-11 { left: - .gs[@inc] * 11; }
+.gs-pull-12 { left: - .gs[@inc] * 12; }
+.gs-pull-13 { left: - .gs[@inc] * 13; }
+.gs-pull-14 { left: - .gs[@inc] * 14; }
+.gs-pull-15 { left: - .gs[@inc] * 15; }
+.gs-pull-16 { left: - .gs[@inc] * 16; }
+.gs-pull-17 { left: - .gs[@inc] * 17; }
+.gs-pull-18 { left: - .gs[@inc] * 18; }
+.gs-pull-19 { left: - .gs[@inc] * 19; }
+.gs-pull-20 { left: - .gs[@inc] * 20; }
+.gs-pull-21 { left: - .gs[@inc] * 21; }
+.gs-pull-22 { left: - .gs[@inc] * 22; }
+.gs-pull-23 { left: - .gs[@inc] * 23; }
+
+/**
+ * Other
+**/
+
+.gs-full, .gs-first { margin-left: 0; }
+.gs-full, .gs-last { margin-right: 0; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
